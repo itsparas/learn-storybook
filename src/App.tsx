@@ -4,7 +4,15 @@ import CustomToast from "./components/toast";
 const App = () => {
   return (
     <div>
-      <CustomToast message="Message here" type="custom" />
+      <CustomToast
+        message="Message here"
+        type="notification"
+        showIcon
+        showAction
+        showCloseAction
+        showDivider
+        notificationType="success"
+      />
       <Toaster />
     </div>
   );
